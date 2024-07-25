@@ -6,4 +6,5 @@ export const envs = {
   PORT: process.env.PORT as string,
   API_URL: process.env.API_URL as string,
   API_KEY: process.env.API_KEY as string,
+  APP_BASE_URL: process.env.APP_BASE_URL as string,
 };
