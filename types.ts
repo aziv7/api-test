@@ -1,3 +1,5 @@
+import { Request } from 'express';
+
 export interface IMovie {
   id: number;
   title: string;
@@ -8,4 +10,8 @@ export interface IMovie {
 export interface IMoviesResponse {
   page: number;
   results: IMovie[];
+}
+
+export interface IMovieParams {
+  movie_id: number;
 }

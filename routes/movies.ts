@@ -1,8 +1,8 @@
 import { Router } from 'express';
-import { moviesToPDF } from '../controllers/movies';
+import { getMovieByID, moviesToPDF } from '../controllers/movies';
 
 const router = Router();
-
+router.get('/:movie_id', getMovieByID);
 router.get('/', moviesToPDF);
 
 export default router;
